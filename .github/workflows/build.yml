@@ -1,5 +1,7 @@
 name: Build All Firmwares
 on: workflow_dispatch
+permissions:
+  contents: write
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -8,12 +10,12 @@ jobs:
       - run: |
           for v in 900 903 904 950 951 960 1000 1001 1050 1070 1071 1100 1102 1150 1152 1200 1202 1250 1252 1300 1302 1350 1352; do
             mkdir -p src/$v
-            echo "<h1>PS4 $v - MAGIC STORE by Mohamed Ehab</h1><p>Coming Soon</p><a href='../../index.html'>Back</a>" > src/$v/index.html
+            echo "<h1>PS4 $v - MAGIC STORE</h1><a href='../../index.html'>Back</a>" > src/$v/index.html
           done
-          echo "" > .nojekyll
+          touch .nojekyll
       - run: |
           git config user.name "Mohamed Ehab"
           git config user.email "mohamed@magic.store"
           git add .
-          git commit -m "Add all firmwares 9.00 to 13.52" || echo "no changes"
+          git commit -m "Add all firmwares 9 to 13.52" || true
           git push
