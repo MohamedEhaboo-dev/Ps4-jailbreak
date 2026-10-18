@@ -14,9 +14,12 @@ nav a{color:#b9cee3;text-decoration:none;margin:0 12px;font-weight:bold}
 background:radial-gradient(circle at 50% 35%,#073c72 0,#020713 62%),linear-gradient(120deg,#020713,#031d38)}
 .hero-inner{max-width:950px}.tag{font-size:22px;letter-spacing:5px;color:#dcecff}
 h1{font-size:clamp(58px,10vw,115px);margin:10px 0;color:#08aaff;font-style:italic;text-shadow:0 0 35px #007fff}
-.hero p{font-size:20px;color:#b9cee2}.btn{display:inline-block;margin-top:24px;padding:18px 65px;border:2px solid #08aaff;
-border-radius:55px;color:#fff;background:#041a31;text-decoration:none;font-size:24px;font-weight:bold;
-box-shadow:0 0 28px #007cff;cursor:pointer}.btn:hover{background:#07355c}
+.hero p{font-size:20px;color:#b9cee2}
+.btn{display:inline-block;margin:10px;padding:18px 45px;border:2px solid #08aaff;
+border-radius:55px;color:#fff;background:#041a31;text-decoration:none;font-size:20px;font-weight:bold;
+box-shadow:0 0 28px #007cff;cursor:pointer}
+.btn:hover{background:#07355c}
+.btn-gold{border-color:#f5c518;box-shadow:0 0 28px #f5c518; background:#2b2300}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:45px 6%}
 .card{padding:25px;border:1px solid #07558d;border-radius:18px;background:linear-gradient(145deg,#06172a,#030b17)}
 .card h3{color:#08aaff;margin-top:0}.card p{color:#a9bfd2;line-height:1.6}
@@ -31,38 +34,31 @@ footer{padding:30px 6%;border-top:1px solid #07558d;text-align:center;color:#789
 <div class="brand">MOHAMED <b>EHAB</b></div>
 <nav><a href="#">Home</a><a href="#features">Features</a><a href="#info">Info</a><a href="#support">Support</a></nav>
 </header>
-
 <section class="hero">
 <div class="hero-inner">
 <div class="tag">PLAYSTATION 4</div>
 <h1>JAILBREAK</h1>
 <p>More Control • More Freedom</p>
 <p>Welcome to the official PS4 Jailbreak page by <b style="color:#08aaff">Mohamed Ehab</b>.</p>
-<a class="btn" href="#features" onclick="demo()">🔓 Jailbreak</a>
-<p id="msg" style="font-size:14px"></p>
+
+<!-- الزرارين الصح -->
+<a class="btn" href="src/900/index.html">🔓 Jailbreak 9.00</a>
+<a class="btn btn-gold" href="src/1352/jb.html">🔓 Jailbreak 13.52</a>
+
+<p style="margin-top:15px; color:#f5c518">MAGIC STORE</p>
 </div>
 </section>
-
 <section class="grid" id="features">
 <div class="card"><h3>🎮 Homebrew</h3><p>واجهة منظمة لمعلومات وتطبيقات Homebrew.</p></div>
 <div class="card"><h3>🎨 Custom Themes</h3><p>قسم مخصص للثيمات والتخصيصات.</p></div>
 <div class="card"><h3>⚙️ Features</h3><p>اعرض المميزات والإصدارات بطريقة واضحة.</p></div>
 <div class="card"><h3>🛡️ Safe & Easy</h3><p>تعليمات ومعلومات مرتبة وسهلة القراءة.</p></div>
 </section>
-
 <section class="info" id="info">
-<div><strong>Supported Firmware</strong><span>ضع هنا الإصدارات التي تدعمها أداتك.</span></div>
-<div><strong>Latest Release</strong><span>ضع رقم الإصدار وتاريخ التحديث.</span></div>
-<div><strong>Disclaimer</strong><span>صفحة معلوماتية؛ لا تنفذ استغلالًا تلقائيًا.</span></div>
+<div><strong>Supported Firmware</strong><span>9.00 / 13.52 / 12.02</span></div>
+<div><strong>Latest Release</strong><span>MAGIC STORE V1 - Oct 2026</span></div>
+<div><strong>Disclaimer</strong><span>By Mohamed Ehab - For Educational Purpose.</span></div>
 </section>
-
 <footer id="support">MOHAMED EHAB • PS4 JAILBREAK • FREEDOM IS YOURS</footer>
-<script>
-function demo(){
- const m=document.getElementById('msg');
- m.textContent='زر تجريبي للواجهة — أضف رابط أداتك الموثوقة إذا أردت.';
- setTimeout(()=>m.textContent='',3500);
-}
-</script>
 </body>
 </html>
